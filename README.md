@@ -1,9 +1,5 @@
 # docker-Java-kubernetes-project
 
-
-INSTALL MINIKUBE 
-***********************************************************
-
 KUBECTL
 curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.20.4/2021-04-12/bin/linux/amd64/kubectl
 chmod +x ./kubectl
@@ -18,9 +14,6 @@ DOCKER
 yum install docker -y
 systemctl  start docker
 systemctl enable docker
-
-https://minikube.sigs.k8s.io/docs/start/
-***********************************************************
 
 
 
@@ -100,17 +93,17 @@ Deploying Java Applications with Docker and Kubernetes
 
 2) Create docker hub account
 
-3) Build the image in local -> docker build -t praveensingam1994/shopfront:latest .
+3) Build the image in local -> docker build -t vamsi9640/shopfront:latest .
 
-docker build -t praveensingam1994/productcatalogue:latest .
+docker build -t vamsi9640/productcatalogue:latest .
 
-docker build -t praveensingam1994/stockmanager:latest .
+docker build -t vamsi9640/stockmanager:latest .
 
-4) Push the image to your docker hub -> docker push praveensingam1994/shopfront:latest 
+4) Push the image to your docker hub -> docker push vamsi9640/shopfront:latest 
 
-docker push praveensingam1994/productcatalogue:latest
+docker push vamsi9640/productcatalogue:latest
 
-docker push praveensingam1994/stockmanager:latest
+docker push vamsi9640/stockmanager:latest
 
 5) Go to kubernetes folder and create the pods -> 
 
